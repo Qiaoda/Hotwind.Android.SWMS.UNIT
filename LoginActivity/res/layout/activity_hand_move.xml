@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/cn.jitmarketing.hot"
+    android:id="@+id/hand_move_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical" >
+      <TextView
+            style="@style/normal_black_text"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:text="原库位:" />  
+          <cn.jitmarketing.hot.view.SkuEditText
+            android:id="@+id/text_shelf_old"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/color_black_text"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+   
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_vertical" >
+
+        <TextView
+            style="@style/normal_black_text"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:text="商品编码:" />
+
+        <cn.jitmarketing.hot.view.ClearEditText
+            android:id="@+id/hand_move_sku"
+            style="@style/switch_parent_layout"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:digits="@string/digits"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="@color/color_black_text"
+            android:textColorHint="@color/color_gray_text"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_vertical" >
+
+        <TextView
+            style="@style/normal_black_text"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:text="数量:" />
+
+        <cn.jitmarketing.hot.view.ClearEditText
+            android:id="@+id/hand_move_count"
+            style="@style/switch_parent_layout"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:maxLength="7"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="@color/color_black_text"
+            android:textColorHint="@color/color_gray_text"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_vertical" >
+          <TextView
+            style="@style/normal_black_text"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:text="新库位:" />  
+          <cn.jitmarketing.hot.view.SkuEditText
+            android:id="@+id/text_shelf_new"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/color_black_text"
+            android:textSize="16sp" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp" >
+        <TextView
+            android:id="@+id/hand_move_cancle"
+            style="@style/normal_button_text"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:text="取消" />
+
+        <TextView
+            android:id="@+id/hand_move_sure"
+            style="@style/normal_button_text"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:text="确定" />
+    </LinearLayout>
+
+</LinearLayout>

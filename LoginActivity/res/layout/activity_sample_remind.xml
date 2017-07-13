@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:orientation="vertical">
+
+    <cn.jitmarketing.hot.view.TitleWidget
+        android:id="@+id/allocation_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:left_bg="@drawable/back"
+        app:text="@string/remind_sample"/>
+
+    <LinearLayout
+        android:id="@+id/ll_searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/gray_cc"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/shadow_bg"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/btn_custom_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/search1"
+                android:clickable="false"/>
+
+            <cn.jitmarketing.hot.view.ClearEditText
+                android:id="@+id/check_stock_search_edt"
+                style="@style/normal_black_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:digits="@string/digits"
+                android:ellipsize="end"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="left|center_vertical"
+                android:hint="输入SKU码"
+                android:imeOptions="actionSearch"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:singleLine="true"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/shadow_bg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp">
+
+                <TextView
+                    style="@style/small_gray_text"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="款号"/>
+
+                <TextView
+                    style="@style/small_gray_text"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="色号"/>
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/list_sku"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:cacheColorHint="#00000000"
+                android:divider="#00000000"
+                android:dividerHeight="5dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:listSelector="#00000000"/>
+
+            <LinearLayout
+                android:id="@+id/ll_loadMore"
+                android:layout_width="match_parent"
+                android:layout_height="35dip"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ProgressBar
+                    style="@style/customProgressBar"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:text="正在加载..."/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_no_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="暂无数据！"/>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/half_transparent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="2dip"
+    android:paddingRight="2dip" >
+
+    <ImageView
+        android:id="@+id/capture_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center"
+        android:clickable="true" />
+
+    <TextView
+        android:id="@+id/tweet_detail_head_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+         />
+
+    <ImageView
+        android:id="@+id/capture_flash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center"
+        android:layout_marginRight="8dip"
+        android:clickable="true"
+        android:tag="1" />
+
+</FrameLayout>

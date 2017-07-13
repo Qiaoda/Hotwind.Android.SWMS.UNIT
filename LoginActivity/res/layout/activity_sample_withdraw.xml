@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <cn.jitmarketing.hot.view.TitleWidget
+            android:id="@+id/allocation_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:left_bg="@drawable/back"
+            app:text="@string/sample_withdraw" />
+
+        <LinearLayout
+            android:id="@+id/ll_searchBar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/gray_cc"
+            android:gravity="center_vertical" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/shadow_bg"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/btn_custom_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/search1"
+                    android:clickable="false" />
+
+                <cn.jitmarketing.hot.view.ClearEditText
+                    android:id="@+id/check_stock_search_edt"
+                    style="@style/normal_black_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:digits="@string/digits"
+                    android:ellipsize="end"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="left|center_vertical"
+                    android:hint="输入SKU码"
+                    android:imeOptions="actionSearch"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:singleLine="true" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 搜索结果列表 -->
+
+        <ListView
+            android:id="@+id/search_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:divider="@color/color_home_horizontal"
+            android:dividerHeight="0.5dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="8dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/btn_withdraw"
+            style="@style/normal_button_text"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:text="@string/sample_withdraw" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ll_bottomBar"
+        android:layout_below="@id/search_layout"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:layout_marginTop="8dip" >
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/no_data"
+        style="@style/small_gray_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="请先扫码" />
+
+</RelativeLayout>

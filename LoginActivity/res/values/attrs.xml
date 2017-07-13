@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<resources>  
+    <declare-styleable name="TitleWidget">  
+        <attr name="left_bg" format="reference" />  
+        <attr name="left_text" format="reference" />  
+        <attr name="text" format="reference" />  
+        <attr name="right_bg" format="reference" />  
+        <attr name="right_text" format="reference" />  
+    </declare-styleable>  
+    
+</resources>  

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/cn.jitmarketing.hot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:orientation="vertical" >
+
+    <cn.jitmarketing.hot.view.TitleWidget
+        android:id="@+id/take_goods_batch_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:left_bg="@drawable/back"
+        app:text="@string/take_goods_batch" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/sku_txt"
+                style="@style/normal_black_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/normal_black_text"
+                android:text="扫描次数:  "
+                android:textColor="@color/color_gray_text" />
+
+            <TextView
+                android:id="@+id/scan_time_txt"
+                style="@style/normal_black_text"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:text="0" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center_vertical" >
+
+        <TextView
+            style="@style/normal_black_text"
+            android:text="库位:     "
+            android:textColor="@color/color_gray_text" />
+
+        <cn.jitmarketing.hot.view.SkuEditText
+            android:id="@+id/sku_shelf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_green" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp" >
+
+        <TextView
+            android:id="@+id/shelf_code_txt"
+            style="@style/normal_black_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="库位" />
+
+        <TextView
+            android:id="@+id/sku_num_txt"
+            style="@style/normal_black_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="数量" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/batch_take_goods_listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1"
+        android:divider="@color/color_home_horizontal"
+        android:dividerHeight="0.5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/confirm_btn"
+            style="@style/normal_button_text"
+            android:layout_width="120dp"
+            android:layout_height="42dp"
+            android:text="确定" />
+
+        <Button
+            android:id="@+id/hand_btn"
+            style="@style/normal_button_text"
+            android:layout_width="120dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="10dp"
+            android:text="手动" />
+    </LinearLayout>
+
+</LinearLayout>

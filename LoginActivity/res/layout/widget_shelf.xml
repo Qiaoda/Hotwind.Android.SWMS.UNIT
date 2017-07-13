@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <EditText
+        android:id="@+id/shelf_one"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/shape_gray_frame_sharp"
+        android:gravity="left|center_vertical"
+        android:inputType="textCapCharacters"
+        android:maxLength="1" />
+
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="-" />
+
+    <EditText
+        android:id="@+id/shelf_two"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/shape_gray_frame_sharp"
+        android:gravity="left|center_vertical"
+        android:maxLength="2" />
+
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="-" />
+
+    <EditText
+        android:id="@+id/shelf_three"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/shape_gray_frame_sharp"
+        android:gravity="left|center_vertical"
+        android:maxLength="1" />
+
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="-" />
+
+    <EditText
+        android:id="@+id/shelf_four"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/shape_gray_frame_sharp"
+        android:gravity="left|center_vertical"
+        android:maxLength="1" />
+
+</LinearLayout>

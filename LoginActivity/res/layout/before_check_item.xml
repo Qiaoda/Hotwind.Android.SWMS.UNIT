@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="horizontal"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_vertical">
+     <TextView
+        android:id="@+id/scan_sku"
+        style="@style/normal_black_text"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical|left"
+        android:layout_marginLeft="10dp"
+        android:focusable = "false"
+        android:textColor="@color/color_black_text" />
+
+    <TextView
+        android:id="@+id/scan_count"
+        style="@style/normal_black_text"
+        android:layout_width="0dp"
+        android:focusable = "false"
+        android:layout_height="42dp"
+        android:layout_weight="1"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/color_black_text"
+        android:gravity="right|center_vertical" />
+    
+
+</LinearLayout>

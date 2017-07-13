@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- 按下时状态 -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/color_green_active"/>
+        </shape>
+    </item>
+    <!-- 不可用时状态 -->
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/color_green_disable"/>
+        </shape>
+    </item>
+    <!-- 默认状态 -->
+    <item android:drawable="@color/color_green_inactive"/>
+        
+</selector>

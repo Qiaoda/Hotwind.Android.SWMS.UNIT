@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/cn.jitmarketing.hot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:orientation="vertical" >
+
+    <cn.jitmarketing.hot.view.TitleWidget
+        android:id="@+id/history_pandian_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:left_bg="@drawable/back"
+        app:text="@string/history_shelf_info" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp" >
+
+            <TextView
+                style="@style/small_gray_text"
+                android:text="库位:  " />
+
+            <TextView
+                android:id="@+id/actual_shelf_count"
+                style="@style/normal_black_text"
+                android:textColor="@color/color_green" />
+
+            <TextView
+                style="@style/normal_black_text"
+                android:text="/" />
+
+            <TextView
+                android:id="@+id/system_shelf_count"
+                style="@style/normal_black_text"
+                android:textColor="@color/color_gray_text" />
+
+            <TextView
+                style="@style/normal_black_text"
+                android:text="个" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp" >
+
+            <TextView
+                style="@style/small_gray_text"
+                android:text="盘点数量:  " />
+
+            <TextView
+                android:id="@+id/actual_pandian_count"
+                style="@style/normal_black_text"
+                android:textColor="@color/color_green" />
+
+            <TextView
+                style="@style/normal_black_text"
+                android:text="/" />
+
+            <TextView
+                android:id="@+id/system_pandian_count"
+                style="@style/normal_black_text"
+                android:textColor="@color/color_gray_text" />
+
+            <TextView
+                style="@style/normal_black_text"
+                android:text="个" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp" >
+
+            <TextView
+                style="@style/small_gray_text"
+                android:text="已盘有差异库位:  " />
+
+            <TextView
+                android:id="@+id/diffrence_shelf"
+                style="@style/normal_black_text"
+                android:textColor="@color/color_green" />
+
+            <TextView
+                style="@style/normal_black_text"
+                android:text="个" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp" >
+
+            <TextView
+                style="@style/small_gray_text"
+                android:text="已盘有差异金额:  " />
+
+            <TextView
+                android:id="@+id/diffrence_money"
+                style="@style/normal_black_text"
+                android:textColor="@color/color_green" />
+
+            <TextView
+                style="@style/normal_black_text"
+                android:text="元" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp" >
+
+            <TextView
+                style="@style/small_gray_text"
+                android:text="已做调整单金额:  " />
+
+            <TextView
+                android:id="@+id/diffrence_tiaozheng_money"
+                style="@style/normal_black_text"
+                android:textColor="@color/color_green" />
+
+            <TextView
+                style="@style/normal_black_text"
+                android:text="元" />
+        </LinearLayout>
+        <!-- 待处理金额 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp" >
+
+                <TextView
+                    style="@style/small_gray_text"
+                    android:text="待处理金额:  " />
+
+                <TextView
+                    android:id="@+id/pending_money"
+                    style="@style/normal_black_text"
+                    android:textColor="@color/color_green" />
+
+                <TextView
+                    style="@style/normal_black_text"
+                    android:text="元" />
+            </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/stock_detail_btn"
+            style="@style/normal_button_text"
+            android:layout_width="120dp"
+            android:text="盘点明细" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Ex to String -->
+    <string name="ex_str_loading">正在为您努力加载...</string>
+    <string name="ex_str_param_not_empty">参数不能为空</string>
+    <string name="ex_str_net_no">网络不可用</string>
+    <string name="ex_str_content_please_install_email">选择 Email 客户端</string>
+    <string name="ex_str_content_please_not_mark_app">请选中“允许安装非电子市场的应用程序选项”再试！</string>
+    <string name="ex_str_content_please_check_app_type">运行失败,请检查该应用的类型!</string>
+    
+    <string name="ex_str_device_net_type_unknown">未知</string>
+    <string name="ex_str_device_net_type_gprs">GPRS (移动/联通2G)</string>
+    <string name="ex_str_device_net_type_edge">EDGE (移动/联通2G)</string>
+    <string name="ex_str_device_net_type_umts">UMTS (移动/联通3G)</string>
+    <string name="ex_str_device_net_type_cdma">CDMA (电信2G)</string>
+    <string name="ex_str_device_net_type_evdo0">EVDO0 (电信3G)</string>
+    <string name="ex_str_device_net_type_evdoa">EVDOA (电信3G)</string>
+    <string name="ex_str_device_net_type_1xrtt">1xRTT</string>
+    <string name="ex_str_device_net_type_hsdpa">HSDPA (移动/联通3G)</string>
+    <string name="ex_str_device_net_type_hsupa">HSUPA</string>
+    <string name="ex_str_device_net_type_hspa">HSPA</string>
+	<string name="ex_str_device_net_type_iden">IDEN</string>
+    <string name="ex_str_device_net_type_evdob">EVDOB (电信3G)</string>
+	<string name="ex_str_device_net_type_lte">LTE</string>
+	<string name="ex_str_device_net_type_ehrpd">EHRPD</string>
+	<string name="ex_str_device_net_type_hspap">HSPAP</string>
+	
+	<string name="ex_str_device_phone_type_none">未知</string>
+	<string name="ex_str_device_phone_type_gsm">GSM (移动/联通)</string>
+	<string name="ex_str_device_phone_type_cmda">CDMA (电信)</string>
+	<string name="ex_str_device_phone_type_sip">SIP</string>
+	
+    <!-- xlistview -->
+    <string name="xlistview_header_hint_loading">努力加载中。。。</string>
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">释放刷新</string>
+    <string name="xlistview_footer_hint_ready">释放加载更多</string>
+    <string name="xlistview_footer_hint_no_more">已经是最后一页了</string>
+    <string name="xlistview_footer_hint_normal">上拉加载更多</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+
+    <!-- pulltorefresh -->
+    <string name="pull_to_refresh_pull_label">下拉刷新</string>
+    <string name="pull_to_refresh_release_label">释放刷新</string>
+    <string name="pull_to_refresh_release_label_no_more">已经是最后一页</string>
+    <string name="pull_to_refresh_refreshing_label">正在加载...</string>
+    
+    <!-- Just use standard Pull Down String when pulling up. These can be set for languages which require it -->
+    <string name="pull_to_refresh_from_bottom_pull_label">@string/pull_to_refresh_pull_label</string>
+    <string name="pull_to_refresh_from_bottom_release_label">@string/pull_to_refresh_release_label</string>
+    <string name="pull_to_refresh_from_bottom_refreshing_label">@string/pull_to_refresh_refreshing_label</string>
+    <string name="pull_to_refresh_footer_pull_label">上拉加载更多</string>
+
+</resources>

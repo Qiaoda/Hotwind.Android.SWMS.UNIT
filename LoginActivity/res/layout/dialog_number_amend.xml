@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/dialog_title"
+        style="@style/normal_white_text"
+        android:layout_width="match_parent"
+        android:background="@color/color_green"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="修改抽盘SKU数量" />
+
+    <LinearLayout
+        android:id="@+id/sku_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical" >
+
+        <TextView
+            style="@style/normal_black_text"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:text="SKU:" />
+
+        <cn.jitmarketing.hot.view.ClearEditText
+            android:id="@+id/dialog_sku"
+            style="@style/switch_parent_layout"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:digits="@string/digits"
+            android:inputType="textCapCharacters"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="@color/color_black_text"
+            android:textColorHint="@color/color_gray_text"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical" >
+
+        <TextView
+            style="@style/normal_black_text"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:text="数量:" />
+
+        <cn.jitmarketing.hot.view.NumberAmendView
+            android:id="@+id/amend_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" >
+        </cn.jitmarketing.hot.view.NumberAmendView>
+    </LinearLayout>
+    <!-- 按钮 -->
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_margin="16dp">
+        <TextView 
+            android:id="@+id/d_btn_sure"
+            style="@style/normal_white_text"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@drawable/green_rectangle_button"
+            android:text="确定"/>
+        <TextView 
+            android:id="@+id/d_btn_cancel"
+            style="@style/normal_white_text"  
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="25dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/green_rectangle_button"
+            android:text="取消"/>
+    </LinearLayout>
+
+</LinearLayout>

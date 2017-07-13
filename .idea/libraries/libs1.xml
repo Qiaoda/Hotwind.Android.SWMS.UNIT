@@ -1,0 +1,31 @@
+<component name="libraryTable">
+  <library name="libs1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/JITAndroidLib-Hot/libs/gson-2.2.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/JITAndroidLib-Hot/libs/ht380a.jar!/" />
+      <root url="jar://$PROJECT_DIR$/JITAndroidLib-Hot/libs/jsoup-1.7.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/JITAndroidLib-Hot/libs/juniversalchardet-1.0.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/JITAndroidLib-Hot/libs/libammsdk.jar!/" />
+      <root url="jar://$PROJECT_DIR$/JITAndroidLib-Hot/libs/litepal-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/JITAndroidLib-Hot/libs/mframework.jar!/" />
+      <root url="jar://$PROJECT_DIR$/JITAndroidLib-Hot/libs/pinyin4j-2.5.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/JITAndroidLib-Hot/libs/pushservice-4.2.0.63.jar!/" />
+      <root url="jar://$PROJECT_DIR$/JITAndroidLib-Hot/libs/umeng-analytics-v5.2.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/JITAndroidLib-Hot/libs/universal-image-loader-1.9.1-with-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/JITAndroidLib-Hot/libs/xUtils-2.5.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/JITAndroidLib-Hot/libs/zxing-core-2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/JITAndroidLib-Hot/libs/ex-sdk-core-android.jar!/" />
+      <root url="jar://$PROJECT_DIR$/JITAndroidLib-Hot/libs/ShareSDK-Core-2.3.8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/JITAndroidLib-Hot/libs/ShareSDK-QZone-2.3.8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/JITAndroidLib-Hot/libs/ShareSDK-SinaWeibo-2.3.8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/JITAndroidLib-Hot/libs/ShareSDK-Wechat-Core-2.3.8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/JITAndroidLib-Hot/libs/ShareSDK-Wechat-Moments-2.3.8.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/JITAndroidLib-Hot/libs/universal-image-loader-1.9.1-with-sources.jar!/" />
+      <root url="file://$PROJECT_DIR$/JITAndroidLib-Hot/libs" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/JITAndroidLib-Hot/libs" recursive="false" type="SOURCES" />
+  </library>
+</component>

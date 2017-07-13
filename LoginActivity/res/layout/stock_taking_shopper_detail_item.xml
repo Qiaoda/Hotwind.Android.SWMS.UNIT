@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_item_bg"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/sku_txt"
+        style="@style/normal_black_text"
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:textSize="14sp"
+        android:gravity="center_vertical"
+        android:text="SKU"
+        android:textColor="@color/color_gray_text" />
+
+    <TextView
+        android:id="@+id/sys_txt"
+        style="@style/normal_black_text"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:text="系统"
+        android:textColor="@color/color_gray_text" />
+
+    <TextView
+        android:id="@+id/actual_txt"
+        style="@style/normal_black_text"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:text="实际"
+        android:textColor="@color/color_gray_text" />
+
+    <TextView
+        android:id="@+id/dif_count_txt"
+        style="@style/normal_black_text"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:textColor="@color/color_gray_text" />
+    
+    <TextView
+        android:id="@+id/dif_txt"
+        style="@style/normal_black_text"
+        android:layout_width="0dp"
+        android:layout_weight="1.5"
+        android:textSize="14sp"
+        android:gravity="center_vertical|right"
+        android:text="差异金额"
+        android:textColor="@color/color_gray_text" />
+
+</LinearLayout>

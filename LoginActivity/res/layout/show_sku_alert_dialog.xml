@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shadow_bg"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            style="@style/normal_black_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SKU:  "
+            android:textColor="@color/color_gray_text" />
+
+        <TextView
+            android:id="@+id/sku_txt"
+            style="@style/normal_black_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="94W001011"
+            android:textColor="@color/color_green" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            style="@style/normal_black_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="数量:  "
+            android:textColor="@color/color_gray_text" />
+
+        <TextView
+            android:id="@+id/default_num_txt"
+            style="@style/normal_black_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/more_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <Button
+                android:id="@+id/jian_btn"
+                android:layout_width="65dp"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:text="-"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/num_edit"
+                android:layout_width="65dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="4dp"
+                android:digits="0123456789"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="7"
+                android:singleLine="true"
+                android:text="1"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/jia_btn"
+                android:layout_width="65dp"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:text="+"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_gray_text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/btn_ok"
+            style="@style/normal_button_text"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:text="确定" />
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="0dp" />
+
+        <TextView
+            android:id="@+id/btn_cancel"
+            style="@style/normal_button_text"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:text="取消" />
+    </LinearLayout>
+</LinearLayout>

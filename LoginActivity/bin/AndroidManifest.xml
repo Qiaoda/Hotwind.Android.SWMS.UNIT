@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.jitmarketing.hot"
+    android:installLocation="auto"
+    android:versionCode="8"
+    android:versionName="1.8.1" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+    <application
+        android:name=".HotApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:persistent="true"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <service android:name=".util.GetOutStockListService" >
+            <intent-filter>
+                <action android:name="cn.jitmarketing.hot.GetOutStockListService" />
+            </intent-filter>
+        </service>
+        <service android:name=".service.UpdateService" />
+
+        <activity
+            android:name=".LoginActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustUnspecified" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.sku.PosLogRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.sku.AddStockActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.sku.CheckStockActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.sku.CheckStockFuzzyListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.sku.ApplyListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".ui.sku.SomeSampleDialog"
+            android:launchMode="singleTask"
+            android:theme="@style/Transparent" />
+        <activity
+            android:name=".ui.sku.SendRequestDialog"
+            android:launchMode="singleTask"
+            android:theme="@style/Transparent" />
+        <activity
+            android:name=".ui.shelf.TrimActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".ui.shelf.TrimingActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FloatActivity" />
+        <activity
+            android:name=".ui.sku.TakeGoodsActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".ui.shelf.ResetSkuActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".ui.shelf.SkuShelvesActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.shelf.AllocationActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".ui.shelf.AllocationCreateActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.shelf.AllocationSelectActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FloatActivity" />
+        <activity
+            android:name=".ui.shelf.DetailInfoActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.shelf.MoveShelfActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.shelf.StockTakingWarehouseActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.shelf.StockTakingShopownerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.shelf.StockTakingTaskDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.shelf.StockTakingTaskActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.shelf.StockTakingActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.shelf.StockTakingDetailActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.shelf.StockTakingDiffrenceActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FloatActivity" />
+        <activity
+            android:name=".ui.shelf.InStockListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.shelf.InStockCompleteCheckActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.shelf.InStockActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.shelf.InStockCheckActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.shelf.SkuShelvesInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.shelf.HandResetActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.FloatActivity" />
+        <activity
+            android:name=".ui.shelf.CreatStockTaskActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.FloatActivity" />
+        <activity
+            android:name=".ui.shelf.CGYStockActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.shelf.CGYDetailActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.shelf.HandStockActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FloatActivity" />
+        <activity
+            android:name=".ui.shelf.AmendPasswordActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FloatActivity" />
+        <activity
+            android:name=".ui.shelf.HandInStockActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FloatActivity" />
+        <activity
+            android:name=".ui.shelf.ShowStockActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FloatActivity" />
+        <activity
+            android:name=".ui.shelf.HandShelfActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FloatActivity"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".ui.shelf.HandAddStockActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FloatActivity" />
+        <activity
+            android:name=".ui.shelf.ShelfDetailActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SettingActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.shelf.HandMoveActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FloatActivity" />
+        <activity
+            android:name=".ui.shelf.MoveDetailActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.shelf.StockHistoryActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.shelf.ShelfAndInStockActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.shelf.MainShelfAndActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.shelf.ShelfAndStockDetailActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.shelf.ShelfAndCheckActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.shelf.NewInStockCompleteActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.shelf.MyViewPage"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.shelf.AllocationHistoryActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.sku.TakeGoodsBatchActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.shelf.HandTakeGoodBatchActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FloatActivity" />
+        <activity
+            android:name=".ui.shelf.ResetSkuBatchActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pandian.StockTakingShopperActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pandian.StockTakingShopperHistoryDetailActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pandian.StockTakingShopperDetailActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pandian.StockTakingShopperHistoryActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pandian.StockTakingShopperDetailListActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pandian.StockTakingShopperAddActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FloatActivity" />
+        <activity
+            android:name=".ui.shelf.HandResetSkuBatchActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FloatActivity" />
+        <activity
+            android:name=".NoticeSettingActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <!-- ===样品管理=== -->
+        <activity
+            android:name=".ui.sample.SampleActivity"
+            android:screenOrientation="portrait" />
+        <!-- 出样 -->
+        <activity
+            android:name=".ui.sample.OutSampleActivity"
+            android:screenOrientation="portrait" />
+        <!-- ====撤样=== -->
+        <activity
+            android:name=".ui.sample.SampleWithdrawActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <!-- ====换样=== -->
+        <activity
+            android:name=".ui.sample.ChangeSampleActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <!-- ====出样提醒=== -->
+        <activity
+            android:name=".ui.sample.SampleRemindActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <!-- ====鞋子出样、撤样=== -->
+        <activity
+            android:name=".ui.sample.OutAndWithdrawActivity"
+            android:screenOrientation="portrait" />
+        <!-- ===直接撤（非鞋类、鞋类）=== -->
+        <activity
+            android:name=".ui.sample.DirectWithdrawActivity"
+            android:screenOrientation="portrait" />
+        <!-- ===样品处理activity(dialog样式)=== -->
+        <activity
+            android:name=".ui.sample.HandSampleDialog"
+            android:launchMode="singleTask"
+            android:theme="@style/Transparent" />
+
+        <service android:name=".service.BootService" />
+        <service android:name=".service.NoticeService" />
+        <service android:name="com.example.scandemo.ScanService" />
+        <!-- 日志上传服务 -->
+        <service android:name=".service.UploadLogService" >
+        </service>
+        <!-- 直接取新 -->
+        <activity
+            android:name=".ui.sku.DirectNewActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 历史入库 -->
+        <activity
+            android:name=".HistoryInStockActivity"
+            android:label="@string/title_activity_history_in_stock"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 抽盘 -->
+        <activity
+            android:name=".choupan.RandomCheckActivity"
+            android:label="@string/title_activity_random_check"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 抽盘明细 -->
+        <activity
+            android:name=".choupan.RandomCheckDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".choupan.RandomCheckScanActivity"
+            android:label="@string/title_activity_random_check_scan" >
+        </activity>
+        <activity
+            android:name=".choupan.RandomCheckTaskActivity"
+            android:label="@string/title_activity_random_check_task" >
+        </activity>
+        <activity
+            android:name=".choupan.RandomCheckHistoryActivity"
+            android:label="@string/title_activity_random_check_history" >
+        </activity>
+        <!-- 单库位盘点 -->
+        <activity
+            android:name=".pandian.SingleStockActivity"
+            android:label="@string/title_activity_single_stock" >
+        </activity>
+      
+    </application>
+
+</manifest>

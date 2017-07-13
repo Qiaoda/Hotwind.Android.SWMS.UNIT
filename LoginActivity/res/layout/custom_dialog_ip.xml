@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_bg"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/normal_black_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/dialog_title"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center" >
+
+        <TextView
+            style="@style/normal_black_text"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:gravity="center_vertical"
+            android:text="@string/dialog_name"
+            android:textSize="16sp" />
+
+        <cn.jitmarketing.hot.view.ClearEditText
+            android:id="@+id/dialog_name_edt"
+            style="@style/switch_parent_layout"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:hint="@string/input_ip_name"
+            android:maxLength="8"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="@color/color_black_text"
+            android:textColorHint="@color/color_gray_text"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center" >
+
+        <TextView
+            style="@style/normal_black_text"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:gravity="center_vertical"
+            android:text="@string/dialog_ip"
+            android:textSize="16sp" />
+
+        <cn.jitmarketing.hot.view.IPEditText
+            android:id="@+id/dialog_ip_edt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center" >
+
+        <TextView
+            style="@style/normal_black_text"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:gravity="center_vertical"
+            android:text="@string/dialog_port"
+            android:textSize="16sp" />
+
+        <cn.jitmarketing.hot.view.ClearEditText
+            android:id="@+id/dialog_port_edt"
+            style="@style/switch_parent_layout"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:text="80"
+            android:hint="@string/input_ip_port"
+            android:inputType="numberDecimal"
+            android:maxLength="8"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColorHint="@color/color_gray_text"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp" >
+
+        <CheckBox
+            android:id="@+id/dialog_ip_normal_chb"
+            style="@style/normal_black_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/check_box_select"
+            android:checked="true"
+            android:drawablePadding="5dp"
+            android:duplicateParentState="true"
+            android:text="@string/normal_use_ip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp" >
+
+        <Button
+            android:id="@+id/dialog_confirm_btn"
+            style="@style/normal_button_text"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:text="@string/dialog_confirm" />
+
+        <Button
+            android:id="@+id/dialog_cancel_btn"
+            style="@style/normal_button_text"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:text="@string/dialog_cancel" />
+    </LinearLayout>
+
+</LinearLayout>

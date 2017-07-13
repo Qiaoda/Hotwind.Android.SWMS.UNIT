@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color_green"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/shadow_bg"
+            android:gravity="center_vertical" >
+
+            <Button
+                android:id="@+id/btn_custom_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/search1"
+                android:clickable="false" />
+
+            <cn.jitmarketing.hot.view.ClearEditText
+                android:id="@+id/check_stock_search_edt"
+                style="@style/normal_black_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:digits="@string/digits"
+                android:ellipsize="end"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:imeOptions="actionSearch" 
+                android:gravity="left|center_vertical"
+                android:hint="输入SKU码"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/check_storck_cancel"
+            style="@style/normal_white_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="8dp"
+            android:gravity="center"
+            android:text="@string/dialog_cancel"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/search_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/color_home_horizontal"
+        android:dividerHeight="1dp" />
+
+</LinearLayout>

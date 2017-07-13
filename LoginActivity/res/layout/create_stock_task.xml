@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="230dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/create_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/normal_black_text"
+            android:layout_width="80dp"
+            android:gravity="center_vertical"
+            android:text="@string/create_stock_task_title" />
+
+        <Spinner
+            android:id="@+id/create_spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/normal_black_text"
+            android:layout_width="80dp"
+            android:gravity="center_vertical"
+            android:text="@string/create_stock_task_num" />
+
+        <TextView
+            android:id="@+id/create_count"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp"
+            android:gravity="center_vertical"
+            style="@style/normal_black_text"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/color_home_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/create_new_cancel"
+            style="@style/normal_button_text"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="取消"/>
+
+        <TextView
+            android:id="@+id/create_new_sure"
+            style="@style/normal_button_text"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="创建" />
+    </LinearLayout>
+
+</LinearLayout>

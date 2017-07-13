@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="nulls">#00000000</color><!--无色 -->
+    <!-- APP 自定义色值 -->
+    <color name="gj_d0b888">#66abd6</color>
+    <color name="gj_333333">#333333</color>
+    <color name="gj_666666">#666666</color>
+    <color name="gj_f7f8f9">#f7f8f9</color>
+    <color name="gj_e8e8e8">#e8e8e8</color>
+    <color name="gj_b0b0b0">#b0b0b0</color>
+    <color name="gj_4d463e">#4d463e</color>
+    <color name="gj_e5e5e5">#e5e5e5</color>
+    <color name="gj_999999">#999999</color>
+    <color name="gj_b3b3b3">#b3b3b3</color>
+    <color name="gj_b12f47">#b12f47</color>
+    <color name="gj_b6b6b6">#b6b6b6</color>
+    <color name="gj_b7b7b7">#b7b7b7</color>
+    <color name="gj_8a8a8a">#8a8a8a</color>
+    
+    <color name="main_search_color">#F7DA40</color>
+    <color name="main_reset_color">#FF9E19</color>
+    <color name="main_change_color">#48DAE9</color>
+    <color name="main_pandian_color">#CDE982</color>
+    <color name="main_instore_color">#FF8041</color>
+    <color name="main_shangjia_color">#30D9C4</color>
+    <color name="main_outstore_color">#FF6666</color>
+    <color name="main_sqlb_color">#BA55D3</color>
+    <color name="main_click_search_color">#018659</color>
+    <color name="main_click_reset_color">#018659</color>
+    <color name="main_click_change_color">#018659</color>
+    <color name="main_click_pandian_color">#018659</color>
+    <color name="main_click_instore_color">#018659</color>
+    <color name="main_click_shangjia_color">#018659</color>
+    <color name="main_click_outstore_color">#018659</color>
+    <color name="main_click_sqlb_color">#018659</color>
+    
+    <!-- 项目颜色 -->
+	<color name="color_title_bg">#f8f8f8</color> <!-- 标题背景颜色 -->
+	<color name="color_title_shadow">#b90e15</color> <!-- 标题背景阴影颜色 -->
+	<color name="color_white_text">#FFF</color> <!-- 文本背景颜色 -->
+	<color name="color_other_bg">#ededed</color> <!-- 文本背景颜色 -->
+	<color name="color_red_text">#d2232a</color> <!-- 文本背景颜色 -->
+	<color name="color_black_text">#666666</color> <!-- 文本背景颜色 -->
+	<color name="color_gray_text">#999999</color> <!-- 文本背景颜色 -->
+	<color name="color_blue_text">#006ce5</color> <!-- 文本背景颜色 -->
+	<color name="color_home_horizontal">#cccccc</color> <!-- 首页横线颜色 -->
+	<color name="color_home_vertical">#ffffff</color> <!-- 首页竖线颜色 -->
+	<color name="color_bg">#eaeaea</color><!-- 	整体背景颜色 -->
+	<color name="color_stroke">#cccccc</color> <!-- 边框或者水平横线颜色 -->
+	<color name="color_solid_inactive">#ffffff</color> <!-- 选项卡未激活背景颜色 -->
+	<color name="color_solid_active">#f8e8ac</color> <!-- 选项卡激活背景颜色 -->
+	<color name="color_link_color">#0057ff</color><!-- 用户服务协议的链接颜色 -->
+	<color name="color_translucent">#e0000000</color><!-- 半透明 -->
+	<color name="color_translucent_white">#c0ffffff</color><!-- 半透明 -->
+	<color name="color_green_inactive">#FF018659</color>
+    <color name="color_green_active">#FF1FA67A</color>
+    <color name="color_green_disable">#cccccc</color>
+    <color name="color_blue">#D7F3FF</color>
+    <!-- tab主页面 -->
+    <color name="color_green">#018659</color>
+    <color name="color_gray_back">#EBECEE</color>
+    <color name="maintab_gray">#666666</color>
+    <color name="text_gray_color">#989898</color>
+    <color name="text_gray_enable">#C2C2C2</color>
+    <color name="search_bg">#FFDDE2E4</color>
+
+    <color name="aaa">#FF9900</color>
+     <color name="bbb">#FF0000</color>
+     <color name="diaobo">#006666</color>
+     <color name="tuici">#660099</color>
+     <color name="tuicang">#996600</color>
+      <color name="color_home_horizontal2">#dcdcdc</color> <!-- 横线颜色 -->
+</resources>

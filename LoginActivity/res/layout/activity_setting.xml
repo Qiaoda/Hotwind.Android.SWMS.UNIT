@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/cn.jitmarketing.hot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:orientation="vertical" >
+
+    <cn.jitmarketing.hot.view.TitleWidget
+        android:id="@+id/setting_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:left_bg="@drawable/back"
+        app:text="@string/setting" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/shadow_bg" >
+
+        <TextView
+            android:id="@+id/setting_modify_pwd_txt"
+            style="@style/normal_black_text"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="@string/modify_password" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/shadow_bg" >
+
+        <TextView
+            android:id="@+id/setting_check_update_txt"
+            style="@style/normal_black_text"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="@string/check_update" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/shadow_bg" >
+
+        <TextView
+            android:id="@+id/notice_txt"
+            style="@style/normal_black_text"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="@string/notice_setting" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/setting_logout_btn"
+        style="@style/normal_button_text"
+        android:layout_width="match_parent"
+        android:layout_margin="8dp"
+        android:text="@string/logout" />
+
+    <TextView
+        android:id="@+id/setting_version_txt"
+        style="@style/normal_black_text"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp" />
+
+</LinearLayout>

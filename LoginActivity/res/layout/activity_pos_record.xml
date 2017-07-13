@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/cn.jitmarketing.hot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <cn.jitmarketing.hot.view.TitleWidget
+        android:id="@+id/pos_record_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:left_bg="@drawable/back"
+        app:text="@string/pos_record" />
+    
+    <cn.jitmarketing.hot.view.ClearEditText
+        android:id="@+id/pos_search_edt"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/search_bar_edit_selector"
+        android:drawableLeft="@drawable/search_bar_icon_normal"
+        android:hint="请输入SKU或者订单号"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:imeOptions="actionSearch" 
+        android:singleLine="true"
+        android:textSize="16sp" />
+    
+      <cn.jitmarketing.hot.view.AutoListView
+          android:id="@+id/pos_record_list"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="8dp"
+          android:divider="@null" />
+      
+      <ListView 
+          android:id="@+id/search_listview"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="8dp"
+          android:divider="@null"
+          android:visibility="gone"/>
+
+</LinearLayout>

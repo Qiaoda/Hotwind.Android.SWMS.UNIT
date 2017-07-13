@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/normal_black_text"
+            android:layout_width="match_parent"
+            android:textSize="18sp"
+            android:text="该库位盘点差异"
+            android:layout_margin="8dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp" >
+
+            <TextView
+                style="@style/normal_black_text"
+                android:gravity="left"
+                android:paddingLeft="8dp"
+                android:text="差异金额:  " />
+
+            <TextView
+                android:id="@+id/dif_money_txt"
+                style="@style/normal_black_text"
+                android:gravity="left"
+                android:textColor="@color/color_green" />
+
+            <TextView
+                style="@style/normal_black_text"
+                android:gravity="left"
+                android:text="元" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/normal_black_text"
+                android:gravity="left"
+                android:paddingLeft="8dp"
+                android:text="差异数:  " />
+
+            <TextView
+                android:id="@+id/dif_count_txt"
+                style="@style/normal_black_text"
+                android:gravity="left"
+                android:textColor="@color/color_green" />
+
+            <TextView
+                style="@style/normal_black_text"
+                android:gravity="left"
+                android:text="个" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp" >
+
+        <Button
+            android:id="@+id/dialog_confirm_btn"
+            style="@style/normal_button_text"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:text="重盘" />
+
+        <Button
+            android:id="@+id/dialog_cancel_btn"
+            style="@style/normal_button_text"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:text="不重盘" />
+    </LinearLayout>
+
+</LinearLayout>

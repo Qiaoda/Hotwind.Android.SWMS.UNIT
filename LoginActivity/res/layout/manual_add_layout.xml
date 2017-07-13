@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="40dp" >
+
+    <EditText
+        android:id="@+id/manual_add_sku_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="商品编码"
+        android:singleLine="true" />
+
+    <cn.jitmarketing.hot.util.ShelfText
+        android:id="@+id/manual_add_shelf_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="库位码"
+        android:singleLine="true" />
+
+</LinearLayout>

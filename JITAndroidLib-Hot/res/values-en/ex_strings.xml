@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HotWind-WMS</string>
+    <string name="lib_cancel">cancel</string>
+    <string name="lib_sureTitle">confirm</string>
+    <string name="lib_cancelTitle">cancel</string>
+    <string name="lib_noteTitle">hint</string>
+    <string name="lib_connectionErrorMsg1">net error</string>
+    
+    <string name="retry_after_conneted">retry after conneted network</string>
+    <string name="loading">Loading...</string>
+
+    <!-- xlistview -->
+    <string name="xlistview_header_hint_loading">Loading...</string>
+    <string name="xlistview_header_hint_normal">pull down to refresh</string>
+    <string name="xlistview_header_hint_ready">release to refresh</string>
+    <string name="xlistview_footer_hint_ready">release to load more</string>
+    <string name="xlistview_footer_hint_no_more">Last page</string>
+    <string name="xlistview_footer_hint_normal">pull up to load more</string>
+    <string name="xlistview_header_last_time">last updated:</string>
+    
+    <!-- pulltorefresh -->
+    <string name="pull_to_refresh_pull_label">pull down to refresh</string>
+    <string name="pull_to_refresh_release_label">release to refresh</string>
+    <string name="pull_to_refresh_release_label_no_more">Last page</string>
+    <string name="pull_to_refresh_refreshing_label">Loading....</string>
+    <!-- Just use standard Pull Down String when pulling up. These can be set for languages which require it -->
+    <string name="pull_to_refresh_from_bottom_pull_label">@string/pull_to_refresh_pull_label</string>
+    <string name="pull_to_refresh_from_bottom_release_label">@string/pull_to_refresh_release_label</string>
+    <string name="pull_to_refresh_from_bottom_refreshing_label">@string/pull_to_refresh_refreshing_label</string>
+    <string name="pull_to_refresh_footer_pull_label">pull up to load more</string>
+
+</resources>

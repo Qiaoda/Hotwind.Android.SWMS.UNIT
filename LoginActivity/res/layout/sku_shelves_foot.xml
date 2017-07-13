@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/normal_black_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="库位:" />
+
+        <cn.jitmarketing.hot.view.SkuEditText
+            android:id="@+id/sku_shelf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/normal_black_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="已扫 " />
+
+            <TextView
+                style="@style/normal_black_text"
+                android:id="@+id/sku_really_all_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical" />
+
+            <TextView
+                style="@style/normal_black_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="件" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/sku_scan_detail"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_green_frame"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="明细"
+            android:textColor="@color/color_black_text" />
+    </LinearLayout>
+
+</LinearLayout>

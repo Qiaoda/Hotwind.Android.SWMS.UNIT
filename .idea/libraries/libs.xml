@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="libs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/LoginActivity/libs/android_upload.jar!/" />
+      <root url="jar://$PROJECT_DIR$/LoginActivity/libs/ScannerInterface.jar!/" />
+      <root url="jar://$PROJECT_DIR$/LoginActivity/libs/picasso-2.5.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/LoginActivity/libs/eventbus-3.0.0-beta1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/LoginActivity/libs/android-support-v4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/LoginActivity/libs/rabbitmq-client.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

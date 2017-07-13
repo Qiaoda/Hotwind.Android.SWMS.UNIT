@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <cn.jitmarketing.hot.view.TitleWidget
+            android:id="@+id/reset_postion_title"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            app:left_bg="@drawable/back"
+            app:right_bg="@drawable/search1"
+            app:text="@string/reset_postion" />
+        <!-- 搜索框 -->
+
+        <LinearLayout
+            android:id="@+id/search_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/color_green"
+            android:gravity="center_vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/shadow_bg"
+                android:gravity="center_vertical" >
+
+                <Button
+                    android:id="@+id/btn_custom_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/search1"
+                    android:clickable="false" />
+
+                <cn.jitmarketing.hot.view.ClearEditText
+                    android:id="@+id/check_stock_search_edt"
+                    style="@style/normal_black_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:digits="@string/digits"
+                    android:ellipsize="end"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="left|center_vertical"
+                    android:hint="输入SKU码"
+                    android:imeOptions="actionSearch"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/check_storck_cancel"
+                style="@style/normal_white_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="8dp"
+                android:gravity="center"
+                android:text="@string/dialog_cancel"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/stock_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/chu_Linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/title_button_click_style"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/stock_tab_selector"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:text="取新"
+                android:textColor="@color/color_black_text" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:text="出样"
+                android:textColor="@color/color_black_text" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/chu_tv"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical|right"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"
+            android:text="筛选"
+            android:textColor="@color/color_black_text" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/layout"
+            android:layout_marginTop="10dp"
+            android:background="@color/color_home_horizontal2" />
+    </RelativeLayout>
+    <!-- 搜索框 -->
+
+    <LinearLayout
+        android:id="@+id/hide_search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_gray" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/shadow_bg"
+            android:gravity="center_vertical" >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/search1"
+                android:clickable="false" />
+
+            <cn.jitmarketing.hot.view.ClearEditText
+                android:id="@+id/search_edt"
+                style="@style/normal_black_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:digits="@string/digits"
+                android:ellipsize="end"
+                android:gravity="left|center_vertical"
+                android:hint="输入SKU"
+                android:imeOptions="actionSearch"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout> 
+
+    <cn.jitmarketing.hot.util.RefreshableView
+        android:id="@+id/refreshable_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <ListView
+            android:id="@+id/only_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:divider="@null" />
+    </cn.jitmarketing.hot.util.RefreshableView>
+
+    <TextView
+        android:id="@+id/expand_ok"
+        style="@style/WhiteFont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:text="增 加"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@color/white"
+        android:padding="8dp"
+        android:textColor="@color/color_gray_text"
+        android:visibility="gone" />
+
+</LinearLayout>

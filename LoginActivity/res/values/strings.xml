@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Common -->
+    <string name="pull_to_refresh">下拉可以刷新</string>
+    <string name="release_to_refresh">松开可以刷新</string>
+    <string name="lastUpdateTime">最近更新：%s</string>
+    <string name="load_full">已加载全部</string>
+    <string name="no_data">暂无数据</string>
+    <string name="more">加载中</string>
+    <string name="d">图片描述</string>
+    <string name="noteTitle">提示</string>
+    <string name="LoginOut">您确定注销账号吗？</string>
+    <string name="sureTitle">确定</string>
+    <string name="cancelTitle">取消</string>
+    <string name="GotIt">知道了</string>
+    <string name="SureQuit">您确定退出吗？</string>
+    <string name="tip_effect">您可以点击分享按钮把链接分享给自己</string>
+    <string name="loadingTitle">加载中，请稍后\u2026</string>
+    <string name="noData">暂无内容</string>
+    <string name="submitTitle">提交</string>
+    <string name="operate_confirm">您确定要进行此项操作吗？</string>
+    <string name="app_name">热风门店助手</string>
+    <string name="mark_separator">-</string>
+    <string name="validat_sku">请输入正确库位</string>
+    <string name="query">查询</string>
+    <string name="login_add">添加</string>
+    <string name="dialog_title">添加接入点</string>
+    <string name="dialog_name">名称:</string>
+    <string name="dialog_ip">IP:</string>
+    <string name="dialog_port">PORT:</string>
+    <string name="dialog_confirm">确定</string>
+    <string name="dialog_cancel">取消</string>
+    <string name="point">.</string>
+    <string name="line">-</string>
+    <string name="login">登录</string>
+    <string name="user_name_tel_idcard">输入用户名</string>
+    <string name="insert_password">输入密码</string>
+    <string name="select_ip">选择接入点</string>
+    <string name="normal_use_ip">设置常用</string>
+    <string name="input_ip_name">输入名称</string>
+    <string name="input_ip_port">输入端口号</string>
+    <string name="search">搜索</string>
+    <string name="chech_stock">库存检查</string>
+    <string name="setting">设置</string>
+    <string name="logout">注销</string>
+    <string name="modify_password">修改密码</string>
+    <string name="check_update">检查更新</string>
+    <string name="notice_setting">通知设置</string>
+    <string name="reset_postion">待复位</string>
+    <string name="take_goods_batch">批量拿货</string>
+    <string name="old_password">原密码:</string>
+    <string name="new_password">新密码:</string>
+    <string name="confirm_password">确认密码:</string>
+    <string name="create_stock_task_title">盘点通知:</string>
+    <string name="create_stock_task_num">库位数:</string>
+    <string name="add_stock">添加库位</string>
+    <string name="pos_record">待处理</string>
+    <string name="shoudong">手动</string>
+    <string name="allocation">调拨单</string>
+    <string name="allocation_create">创建调拨单</string>
+    <string name="area">大区</string>
+    <string name="city">城市</string>
+    <string name="unit">店铺</string>
+    <string name="urlError">你的网速不太好，失败</string>
+    <string name="listgetError">你的网速不太好,入库单详细列表拿取失败</string>
+    <string name="getInfo">你的网速不太好,获取数据失败</string>
+    <string name="digits">-0123456789abcdefghijgklmnopqrstuvwxyzABCDEFGHIJGKLMNOPQRSTUVWXYZ</string>
+    <string name="select_unit">选择门店</string>
+    <string name="detail">差异SKU</string>
+    <string name="stock_detail">库位详情</string>
+    <string name="history_shelf_info">历史盘点</string>
+    <string name="sample_manage">样品管理</string>
+    <string name="sample_withdraw">撤样</string>
+    <string name="direct_withdraw">直接撤</string>
+    <string name="direct_out">直接出</string>
+    <string name="out_sample">出样</string>
+    <string name="change_sample">换样</string>
+    <string name="remind_sample">出样提醒</string>
+    <string name="not_gt_sample_num">不可大于出样数量！</string>
+    <string name="no_sku">没有商品！</string>
+    <string name="scan_num_gt_sel_num">数量不可大于选择数！</string>
+    <string name="title_activity_direct_new">DirectNewActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="history_ruku">历史</string>
+    <string name="title_activity_history_in_stock">HistoryInStockActivity</string>
+    <string name="title_activity_random_check">RandomCheckActivity</string>
+    <!-- 抽盘 -->
+    <string name="random_check">抽盘</string>
+    <string name="random_check_detail">抽盘明细</string>
+    <string name="title_activity_random_check_scan">RandomCheckScanActivity</string>
+    <string name="title_activity_random_check_task">RandomCheckTaskActivity</string>
+    <!-- 抽盘任务 -->
+    <string name="random_check_task">抽盘任务</string>
+    <string name="random_check_history">历史</string>
+    <string name="title_activity_random_check_history">RandomCheckHistoryActivity</string>
+    <string name="random_check_a_history">历史抽盘</string>
+    <string name="title_activity_single_stock">单库位盘点</string>
+   <!-- 单库位 -->
+   <string name="tongji">正在统计数据...</string>
+
+</resources>

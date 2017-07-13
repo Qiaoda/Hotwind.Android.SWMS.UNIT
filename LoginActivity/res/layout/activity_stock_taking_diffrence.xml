@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hand_shelf_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/normal_black_text"
+        android:text="该库位差异的SKU"
+        android:textColor="@color/color_green"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp" />
+
+    <ListView
+        android:id="@+id/stock_diffrence_listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:divider="@null" />
+    <TextView 
+        android:id="@+id/diffrence_num_text"
+        style="@style/normal_black_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/diffrence_sure"
+        style="@style/normal_button_text"
+        android:layout_width="100dp"
+        android:layout_height="36dp"
+        android:layout_margin="8dp"
+        android:text="确定" />
+
+</LinearLayout>

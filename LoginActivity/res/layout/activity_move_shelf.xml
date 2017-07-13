@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/cn.jitmarketing.hot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <cn.jitmarketing.hot.view.TitleWidget
+            android:id="@+id/move_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:left_bg="@drawable/back" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="第一步原库位："
+                android:textColor="@color/color_green"
+                android:textSize="16sp" />
+
+            <cn.jitmarketing.hot.view.SkuEditText
+                android:id="@+id/text_shelf_old"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="第二步：扫条码"
+                android:textColor="@color/color_green"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="本次移库 "
+                        android:textColor="@color/color_green"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/text_move_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="0"
+                        android:textColor="@color/common_red"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text=" 件"
+                        android:textColor="@color/color_green"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/move_tv"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="12dp"
+                            android:background="@drawable/shape_green_frame"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="明细"
+                            android:textColor="@color/color_gray_text" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="第三步新库位："
+                android:textColor="@color/color_green"
+                android:textSize="16sp" />
+
+            <cn.jitmarketing.hot.view.SkuEditText
+                android:id="@+id/text_shelf_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/move_shelf_ok"
+            style="@style/normal_button_text"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:height="42dp"
+            android:text="确定" />
+        
+         <TextView
+            android:id="@+id/move_shelf_clean"
+            style="@style/normal_button_text"
+            android:layout_weight="1"
+            android:height="42dp"
+            android:text="清空" />
+
+        <TextView
+            android:id="@+id/move_shelf_manual"
+            style="@style/normal_button_text"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:height="42dp"
+            android:text="手动" />
+    </LinearLayout>
+
+</RelativeLayout>

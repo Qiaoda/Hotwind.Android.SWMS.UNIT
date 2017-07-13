@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/line_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/shadow_bg"
+        android:clickable="false"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_one"
+                style="@style/normal_black_text"
+                android:text="1双"/>
+
+            <TextView
+                android:id="@+id/tv_skuManager"
+                style="@style/small_gray_text"
+                android:layout_alignParentBottom="true"
+                android:text="仓库管理员01"/>
+
+            <TextView
+                android:id="@+id/tv_skuLocation"
+                style="@style/small_gray_text"
+                android:layout_alignParentRight="true"
+                android:text="鞋盒库位：A010101"/>
+
+            <TextView
+                android:id="@+id/tv_time"
+                style="@style/small_gray_text"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:text="2015-08-08 15:00:01"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/btn_out"
+            style="@style/normal_button_text"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="出另一只"/>
+
+        <LinearLayout
+            android:id="@+id/line_withdraw_btns"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/btn_chey"
+                style="@style/normal_button_text"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:text="撤样"/>
+
+            <TextView
+                android:id="@+id/btn_chelyz"
+                style="@style/normal_button_text"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:text="撤一只"/>
+
+            <TextView
+                android:id="@+id/btn_chezj"
+                style="@style/normal_button_text"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:text="直接撤"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

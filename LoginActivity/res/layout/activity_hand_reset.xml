@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hand_reset_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/shadow_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layout_reset_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <RadioButton
+            android:id="@+id/reset_find"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <TextView
+            style="@style/normal_black_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:text="库位:" />
+
+        <cn.jitmarketing.hot.view.SkuEditText
+            android:id="@+id/hand_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="5dp"
+        android:background="@color/gray_dd" />
+
+    <LinearLayout
+        android:id="@+id/layout_reset_no_find"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+
+        <RadioButton
+            android:id="@+id/reset_no_find"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            style="@style/normal_black_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="未找到" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="5dp"
+        android:background="@color/gray_dd"
+        android:visibility="gone" />
+
+    <TextView
+        style="@style/normal_button_text"
+        android:id="@+id/reset_ok"
+        android:layout_marginTop="10dp"
+        android:layout_height="42dp"
+        android:layout_width="100dp"
+        android:layout_gravity="center_horizontal"
+        android:text="确定" />
+
+</LinearLayout>

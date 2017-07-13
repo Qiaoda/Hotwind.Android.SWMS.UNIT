@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/cn.jitmarketing.hot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:orientation="vertical" >
+
+    <cn.jitmarketing.hot.view.TitleWidget
+        android:id="@+id/allocation_history_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:left_bg="@drawable/back" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/shadow_bg_alloca"
+        android:orientation="vertical"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp" >
+
+            <TextView
+                style="@style/normal_black_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="单号:  " />
+
+            <TextView
+                android:id="@+id/allocation_history_code"
+                style="@style/normal_black_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/allcation_type"
+                style="@style/normal_black_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_red_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/come_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp" >
+
+            <TextView
+                style="@style/normal_black_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="目标门店:  " />
+
+            <TextView
+                android:id="@+id/allcation_history_come"
+                style="@style/normal_black_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp" >
+
+            <TextView
+                style="@style/normal_black_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="调拨时间:  " />
+
+            <TextView
+                android:id="@+id/allocation_history_time"
+                style="@style/normal_black_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp">
+
+            <TextView
+                style="@style/normal_black_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="类型:  " />
+
+            <TextView
+                android:id="@+id/allocation_type"
+                style="@style/normal_black_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/history_type_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:visibility="gone" >
+
+            <TextView
+                style="@style/normal_black_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="退次类型:  " />
+
+            <TextView
+                android:id="@+id/allocation_history_type"
+                style="@style/normal_black_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp" >
+
+            <TextView
+                style="@style/normal_black_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="备注:  " />
+
+            <TextView
+                android:id="@+id/allocation_history_remark"
+                style="@style/normal_black_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/color_home_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_solid_inactive"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/alh_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:divider="@color/color_home_horizontal"
+            android:dividerHeight="1dp" >
+        </ListView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_home_horizontal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:gravity="right" >
+
+            <TextView
+                android:id="@+id/allocation_history_count"
+                style="@style/normal_black_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

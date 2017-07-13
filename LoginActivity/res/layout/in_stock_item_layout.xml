@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/in_stock_sku_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/tab_addr"
+        android:padding="5dp"
+        android:text="发货单号：RFH"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/in_stock_sku_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="本批次共50件" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_dd" />
+
+    <TextView
+        android:id="@+id/in_stock_sku_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="未入库"
+        android:textColor="@color/common_red"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/in_stock_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="入库时间" />
+
+</LinearLayout>

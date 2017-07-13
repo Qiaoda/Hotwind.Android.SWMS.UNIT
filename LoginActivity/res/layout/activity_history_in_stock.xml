@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/cn.jitmarketing.hot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <!-- 标题栏 -->
+
+        <cn.jitmarketing.hot.view.TitleWidget
+            android:id="@+id/shelf_and_stock"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:left_bg="@drawable/back" />
+        <!-- 搜索框 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/common_gray" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/shadow_bg"
+                android:gravity="center_vertical" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/search1"
+                    android:clickable="false" />
+
+                <cn.jitmarketing.hot.view.ClearEditText
+                    android:id="@+id/search_edt"
+                    style="@style/normal_black_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="left|center_vertical"
+                    android:hint="输入入库单号"
+                    android:imeOptions="actionSearch"
+                    android:inputType="text"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:singleLine="true" />
+                <!-- android:digits="@string/digits" -->
+            </LinearLayout>
+        </LinearLayout>
+        <!-- 搜索结果列表 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="53dp"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/search_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="#00000000" >
+            </ListView>
+            <!-- 搜索结果提示 -->
+
+            <TextView
+                android:id="@+id/search_tip"
+                style="@style/normal_black_text"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="找不到该单号"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/search_btn"
+        style="@style/normal_button_text"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="3dp"
+        android:height="42dp"
+        android:text="搜索" />
+
+</RelativeLayout>

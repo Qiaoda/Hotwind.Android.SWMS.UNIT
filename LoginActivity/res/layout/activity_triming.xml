@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/cn.jitmarketing.hot"
+    android:id="@+id/triming_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical" >
+
+        <TextView
+            style="@style/normal_black_text"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:text="SKU:" />
+
+        <cn.jitmarketing.hot.view.ClearEditText
+            android:id="@+id/triming_sku"
+            style="@style/switch_parent_layout"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:digits="@string/digits"
+            android:inputType="textCapCharacters"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="@color/color_black_text"
+            android:textColorHint="@color/color_gray_text"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical" >
+
+        <TextView
+            style="@style/normal_black_text"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:text="数量:" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/jian_btn"
+                android:layout_width="60dp"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:text="-"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/num_edit"
+                android:layout_width="60dp"
+                android:layout_height="45dp"
+                android:digits="-0123456789"
+                android:gravity="center"
+                android:maxLength="7"
+                android:singleLine="true"
+                android:text="0"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/jia_btn"
+                android:layout_width="60dp"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:text="+"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_vertical" >
+
+        <TextView
+            style="@style/normal_black_text"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:text="库位:" />
+
+        <cn.jitmarketing.hot.view.SkuEditText
+            android:id="@+id/triming_location"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/color_black_text"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <RadioButton
+            android:id="@+id/one_radio"
+            style="@style/normal_black_text"
+            android:checked="true"
+            android:text="差异调整" />
+
+        <RadioButton
+            android:id="@+id/two_radio"
+            style="@style/normal_black_text"
+            android:text="预售调整" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp" >
+
+        <TextView
+            style="@style/normal_black_text"
+            android:text="备注:  " />
+
+        <EditText
+            android:id="@+id/edit"
+            style="@style/normal_black_text"
+            android:gravity="left"
+            android:layout_width="0dp"
+            android:minLines="2"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp" >
+
+        <TextView
+            android:id="@+id/triming_cancle"
+            style="@style/normal_button_text"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:text="取消" />
+
+        <TextView
+            android:id="@+id/triming_sure"
+            style="@style/normal_button_text"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:text="确定" />
+    </LinearLayout>
+
+</LinearLayout>

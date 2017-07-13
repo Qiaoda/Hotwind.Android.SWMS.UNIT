@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="15dp" >
+
+    <!-- 盘点通知 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp" >
+
+        <TextView
+            style="@style/normal_black_text"
+            android:layout_height="match_parent"
+            android:text="盘点通知：" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+  
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/create_new_cancel"
+            style="@style/normal_button_text"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="取消" />
+
+        <TextView
+            android:id="@+id/create_new_sure"
+            style="@style/normal_button_text"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="创建" />
+    </LinearLayout>
+
+</LinearLayout>

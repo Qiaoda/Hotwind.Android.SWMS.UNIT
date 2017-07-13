@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/cn.jitmarketing.hot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical" >
+
+        <!-- 标题栏 -->
+
+        <cn.jitmarketing.hot.view.TitleWidget
+            android:id="@+id/ac_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:left_bg="@drawable/back"
+            app:right_bg="@drawable/add1_click_button"
+            app:text="@string/title_activity_single_stock" />
+        <!-- 扫描个数 -->
+
+        <TextView
+            android:id="@+id/tip_num"
+            style="@style/normal_black_text"
+            android:layout_height="38dp"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:background="@color/white" />
+        <!-- sku&数量 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/normal_black_text"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="SKU" />
+
+            <TextView
+                style="@style/normal_black_text"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="数量" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/sku_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:divider="@color/gray_66"
+            android:dividerHeight="1dp"
+            android:cacheColorHint="@color/transparent" >
+        </ListView>
+    </LinearLayout>
+
+    <!-- 抽盘明细按钮 -->
+
+    <TextView
+        android:id="@+id/sku_save"
+        style="@style/normal_button_text"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/green_rectangle_button"
+        android:height="42dp"
+        android:text="保存" />
+
+</RelativeLayout>

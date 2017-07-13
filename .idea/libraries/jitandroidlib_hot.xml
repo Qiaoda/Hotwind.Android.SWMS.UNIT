@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="jitandroidlib-hot">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/JITAndroidLib-Hot/bin/jitandroidlib-hot.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

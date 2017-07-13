@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="@drawable/list_item_bg" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:id="@+id/goods_sku_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignTop="@id/goods_sku_icon"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/goods_sku_icon"
+            android:drawableLeft="@drawable/tab_addr"
+            android:drawablePadding="5dp"
+            android:text="商品编码：" />
+
+        <TextView
+            android:id="@+id/goods_sku_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/goods_sku_code"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/goods_sku_icon"
+            android:gravity="center"
+            android:text="商品" />
+
+        <ImageView
+            android:id="@+id/goods_sku_icon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:clickable="false"
+            android:focusable="false"
+            android:visibility="gone"
+            android:background="@drawable/shape_green_frame"
+            android:src="@drawable/icon"
+            android:scaleType="center" />
+    </RelativeLayout>
+
+
+</LinearLayout>

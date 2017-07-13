@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/shadow_bg"
+        android:orientation="vertical"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp" >
+
+            <TextView
+                style="@style/small_gray_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商品编码:  " />
+
+            <TextView
+                android:id="@+id/trim_code"
+                style="@style/normal_black_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp" >
+
+            <TextView
+                style="@style/small_gray_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商品名称:  " />
+
+            <TextView
+                android:id="@+id/trim_id"
+                style="@style/normal_black_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    style="@style/small_gray_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="库位:  " />
+
+                <TextView
+                    android:id="@+id/trim_shelf_code"
+                    style="@style/normal_black_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_green" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    style="@style/small_gray_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="调整数量:  " />
+
+                <TextView
+                    android:id="@+id/trim_count"
+                    style="@style/normal_black_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_green" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp" >
+
+            <TextView
+                style="@style/small_gray_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="操作人:  " />
+
+            <TextView
+                android:id="@+id/trim_oporater"
+                style="@style/normal_black_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp" >
+
+            <TextView
+                style="@style/small_gray_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="调整时间:  " />
+
+            <TextView
+                android:id="@+id/trim_time"
+                style="@style/normal_black_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="2015-6-6 13:00" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp" >
+
+            <TextView
+                style="@style/small_gray_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="调整类型:  " />
+
+            <TextView
+                android:id="@+id/trim_type"
+                style="@style/normal_black_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="2015-6-6 13:00" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp" >
+
+            <TextView
+                style="@style/small_gray_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="备注:  " />
+
+            <TextView
+                android:id="@+id/remark_txt"
+                style="@style/normal_black_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

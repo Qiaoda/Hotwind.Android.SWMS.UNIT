@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/dialog_title"
+        style="@style/normal_white_text"
+        android:layout_width="match_parent"
+        android:background="@color/color_green"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="温馨提示" />
+
+    <LinearLayout
+        android:id="@+id/sku_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical" >
+        <TextView 
+            android:id="@+id/tip_message"
+            style="@style/normal_black_text"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+       
+    </LinearLayout>
+    <!-- 按钮 -->
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_margin="16dp">
+        <TextView 
+            android:id="@+id/d_btn_sure"
+            style="@style/normal_white_text"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@drawable/green_rectangle_button"
+            android:text="确定"/>
+        <TextView 
+            android:id="@+id/d_btn_cancel"
+            style="@style/normal_white_text"  
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="25dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/green_rectangle_button"
+            android:text="取消"/>
+    </LinearLayout>
+
+</LinearLayout>

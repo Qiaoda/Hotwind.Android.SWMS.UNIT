@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_title_bg"
+        android:padding="8dp" >
+
+        <Button
+            android:id="@+id/shopowner_back_btn"
+            style="@style/normal_black_text"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/green_corners"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/shopowner_one_ckb"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:background="@drawable/tab_check_left_button"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:padding="6dp"
+                android:text="未盘点"
+                android:textColor="@drawable/tab_check_text" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/color_green" />
+
+            <CheckBox
+                android:id="@+id/shopowner_two_ckb"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:background="@drawable/tab_check_button"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="6dp"
+                android:text="已盘点"
+                android:textColor="@drawable/tab_check_text" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/color_green" />
+
+            <CheckBox
+                android:id="@+id/shopowner_three_ckb"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:background="@drawable/tab_check_right_button"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="6dp"
+                android:text="可重盘"
+                android:textColor="@drawable/tab_check_text" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <cn.jitmarketing.hot.util.RefreshableView
+        android:id="@+id/refreshable_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    <ListView
+        android:id="@+id/stock_shopowner_list"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@null" />
+</cn.jitmarketing.hot.util.RefreshableView>
+</LinearLayout>

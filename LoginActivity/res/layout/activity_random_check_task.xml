@@ -1,0 +1,148 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/cn.jitmarketing.hot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- 标题栏 -->
+
+        <cn.jitmarketing.hot.view.TitleWidget
+            android:id="@+id/ac_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:left_bg="@drawable/back"
+            app:right_text="@string/random_check_history"
+            app:text="@string/random_check_task" />
+
+        <!-- 抽盘单号 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="15dp" >
+
+            <TextView
+                style="@style/normal_black_text"
+                android:text="抽盘单号：" />
+
+            <TextView
+                style="@style/normal_black_text"
+                android:text="HTCP5145151561565" />
+        </LinearLayout>
+        <!-- 抽盘件数 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="15dp" >
+
+            <TextView
+                style="@style/normal_black_text"
+                android:text="抽盘件数：" />
+
+            <TextView
+                style="@style/normal_black_text"
+                android:text="300/500" />
+        </LinearLayout>
+        <!-- 抽盘库位 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="15dp" >
+
+            <TextView
+                style="@style/normal_black_text"
+                android:text="抽盘库位：" />
+
+            <TextView
+                style="@style/normal_black_text"
+                android:text="1/3" />
+        </LinearLayout>
+        <!-- 抽盘金额 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="15dp" >
+
+            <TextView
+                style="@style/normal_black_text"
+                android:text="抽盘金额：" />
+
+            <TextView
+                style="@style/normal_black_text"
+                android:text="1542.3/12340.8" />
+        </LinearLayout>
+        <!-- 占门店总件数 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="15dp" >
+
+            <TextView
+                style="@style/normal_black_text"
+                android:text="占门店总件数：" />
+
+            <TextView
+                style="@style/normal_black_text"
+                android:text="10%" />
+        </LinearLayout>
+        <!-- 占门店总金额 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="15dp" >
+
+            <TextView
+                style="@style/normal_black_text"
+                android:text="占门店总金额：" />
+
+            <TextView
+                style="@style/normal_black_text"
+                android:text="7.8%" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 抽盘明细按钮 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true" 
+        android:layout_margin="16dp">
+
+        <TextView
+            android:id="@+id/random_check_detail"
+            style="@style/normal_button_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/green_rectangle_button"
+            android:height="42dp"
+            android:text="抽盘明细" />
+        <TextView
+            android:id="@+id/random_check_end"
+            style="@style/normal_button_text"
+            android:layout_width="0dp"
+            android:layout_marginLeft="25dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/green_rectangle_button"
+            android:height="42dp"
+            android:text="结束抽盘" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,134 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/cn.jitmarketing.hot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- 标题栏 -->
+
+        <cn.jitmarketing.hot.view.TitleWidget
+            android:id="@+id/ac_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:left_bg="@drawable/back" />
+
+        <!-- 扫描上传提示 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <TextView
+                style="@style/normal_black_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="扫描实物数：8" />
+            <TextView
+                style="@style/normal_black_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="上传实物数：10" />
+        </LinearLayout>
+         <View 
+             android:layout_width="match_parent"
+             android:layout_height="1dp"
+             android:background="@color/black"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/normal_black_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="SKU" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:gravity="center_horizontal" >
+
+                <TextView
+                    style="@style/normal_black_text"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="系统数" />
+
+                <TextView
+                    style="@style/normal_black_text"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="扫描\n实物数" />
+
+                <TextView
+                    style="@style/normal_black_text"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="接收\n实物数" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_stroke" />
+
+        <ListView
+            android:id="@+id/scan_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@color/transparent" >
+        </ListView>
+    </LinearLayout>
+
+    <!-- 底排按钮 -->
+
+    <LinearLayout
+        android:id="@+id/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_bg"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp" >
+
+        <TextView
+            android:id="@+id/btn_sure"
+            style="@style/normal_button_text"
+            android:layout_weight="1"
+            android:text="确定" />
+
+        <TextView
+            android:id="@+id/btn_save"
+            style="@style/normal_button_text"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:text="保存" />
+
+        <TextView
+            android:id="@+id/btn_hand"
+            style="@style/normal_button_text"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:text="手工输入" />
+    </LinearLayout>
+
+</RelativeLayout>

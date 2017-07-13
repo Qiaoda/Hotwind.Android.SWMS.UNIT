@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shadow_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/shelf_code_txt"
+                style="@style/normal_black_text"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/show_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/operator_txt"
+                    style="@style/normal_black_text"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/small_gray_text"
+                        android:text="盘点时间:  " />
+
+                    <TextView
+                        android:id="@+id/check_time_txt"
+                        style="@style/normal_black_text" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/small_gray_text"
+                        android:text="差异金额:  " />
+
+                    <TextView
+                        android:id="@+id/money_txt"
+                        style="@style/normal_black_text"
+                        android:textColor="@color/color_green" />
+
+                    <TextView
+                        style="@style/normal_black_text"
+                        android:text="元" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/small_gray_text"
+                        android:text="系统数量:  " />
+
+                    <TextView
+                        android:id="@+id/system_count_txt"
+                        style="@style/normal_black_text"
+                        android:textColor="@color/color_green" />
+
+                    <TextView
+                        style="@style/normal_black_text"
+                        android:text="个" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/small_gray_text"
+                        android:text="差异数量:  " />
+
+                    <TextView
+                        android:id="@+id/count_txt"
+                        style="@style/normal_black_text"
+                        android:textColor="@color/color_green" />
+
+                    <TextView
+                        style="@style/normal_black_text"
+                        android:text="个" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_home_horizontal" />
+
+        <TextView
+            android:id="@+id/status_txt"
+            style="@style/normal_black_text"
+            android:layout_marginLeft="8dp"
+            android:layout_width="50dp"
+            android:text="有差异" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/horizontal_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_home_horizontal" />
+
+    <LinearLayout
+        android:id="@+id/sample_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp" >
+
+        <Button
+            android:id="@+id/pandian_start_btn"
+            style="@style/normal_button_text"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:text="盘点开始" />
+
+        <Button
+            android:id="@+id/pandian_end_btn"
+            style="@style/normal_button_text"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:text="盘点完成" />
+    </LinearLayout>
+
+</LinearLayout>

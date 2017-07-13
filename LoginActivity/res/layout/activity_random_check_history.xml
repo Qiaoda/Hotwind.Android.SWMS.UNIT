@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/cn.jitmarketing.hot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <!-- 标题栏 -->
+
+            <cn.jitmarketing.hot.view.TitleWidget
+                android:id="@+id/ac_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:left_bg="@drawable/back"
+                app:right_bg="@drawable/search1"
+                app:text="@string/random_check_a_history" />
+            <!-- 搜索栏 -->
+
+            <LinearLayout
+                android:id="@+id/search_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/color_green"
+                android:gravity="center_vertical"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="42dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shadow_bg"
+                    android:gravity="center_vertical" >
+
+                    <Button
+                        android:id="@+id/btn_custom_search"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:background="@drawable/search1"
+                        android:clickable="false" />
+
+                    <cn.jitmarketing.hot.view.ClearEditText
+                        android:id="@+id/stock_search_edt"
+                        style="@style/normal_black_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:digits="@string/digits"
+                        android:ellipsize="end"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="left|center_vertical"
+                        android:hint="输入库位编码"
+                        android:imeOptions="actionSearch"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:singleLine="true" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/search_cancel"
+                    style="@style/normal_white_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center"
+                    android:text="@string/dialog_cancel"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <ListView
+            android:id="@+id/history_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@color/transparent"
+            android:dividerHeight="3dp"
+            android:padding="3dp" >
+        </ListView>
+    </LinearLayout>
+
+</RelativeLayout>
